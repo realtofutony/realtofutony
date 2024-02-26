@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'BN Cringe Serif';
+    src: url('BNCringeSerifLight.eot');
+    src: local('BN Cringe Serif Light'), local('BNCringeSerifLight'),
+        url('fonts/BNCringeSerifLight.eot?#iefix') format('embedded-opentype'),
+        url('fonts/BNCringeSerifLight.woff2') format('woff2'),
+        url('fonts/BNCringeSerifLight.woff') format('woff'),
+        url('fonts/BNCringeSerifLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BN Cringe Serif';
+    src: url('BNCringeSerifRegular.eot');
+    src: local('BN Cringe Serif'), local('BNCringeSerifRegular'),
+        url('fonts/BNCringeSerifRegular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/BNCringeSerifRegular.woff2') format('woff2'),
+        url('fonts/BNCringeSerifRegular.woff') format('woff'),
+        url('fonts/BNCringeSerifRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BN Cringe Serif';
+    src: url('BNCringeSerifBlack.eot');
+    src: local('BN Cringe Serif Black'), local('BNCringeSerifBlack'),
+        url('fonts/BNCringeSerifBlack.eot?#iefix') format('embedded-opentype'),
+        url('fonts/BNCringeSerifBlack.woff2') format('woff2'),
+        url('fonts/BNCringeSerifBlack.woff') format('woff'),
+        url('fonts/BNCringeSerifBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BN Cringe Serif';
+    src: url('BNCringeSerifBold.eot');
+    src: local('BN Cringe Serif Bold'), local('BNCringeSerifBold'),
+        url('fonts/BNCringeSerifBold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/BNCringeSerifBold.woff2') format('woff2'),
+        url('fonts/BNCringeSerifBold.woff') format('woff'),
+        url('fonts/BNCringeSerifBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BN Cringe Serif';
+    src: url('BNCringeSerifMedium.eot');
+    src: local('BN Cringe Serif Medium'), local('BNCringeSerifMedium'),
+        url('fonts/BNCringeSerifMedium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/BNCringeSerifMedium.woff2') format('woff2'),
+        url('fonts/BNCringeSerifMedium.woff') format('woff'),
+        url('fonts/BNCringeSerifMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+.normal-text {
+    font-family: 'BN Cringe Serif', serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.bold-text {
+    font-family: 'BN Cringe Serif', serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.italic-text {
+    font-family: 'BN Cringe Serif', serif;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.bold-italic-text {
+    font-family: 'BN Cringe Serif', serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+    font-family: 'BN Cringe Serif', serif;
+    text-align: justify;
+    color: #333;
+    background-image: url('images/haveUSeen_background_CIAmode.png');
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1b1b1b;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container {
+    width: 150px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Center the container */
+}
+
+.logo {
+    max-width: 100%; /* Ensure the image fits inside the container */
+    max-height: 100%; /* Ensure the image fits inside the container */
+}
+
+.left-nav {
+    float: left;
+}
+
+.right-nav {
+    float: right;
+}
+
+.left-nav li,
+.right-nav li {
+    display: inline-block; /* Ensures list items are displayed in a line */
+    margin-right: 20px;
+}
+
+.left-nav li:last-child,
+.right-nav li:last-child {
+    margin-right: 0;
+}
+
+.left-nav li a,
+.right-nav li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.header1 {
+    font-family: 'BN Cringe Serif', serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 100px;
+    color: #961515;
+}
+
+#hero {
+    background-color: #adadad00;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.youtube-income-container {
+    width: auto; /* Adjust the width as needed */
+    height: auto; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Center the container */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: justify-all;
+    text-size-adjust: 100%;
+    margin: 0 auto; /* Center the paragraph horizontally */
+    max-width: 1200px; /* Set a maximum width for the paragraph */
+
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
