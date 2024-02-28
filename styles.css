@@ -91,7 +91,7 @@ body {
     font-family: 'BN Cringe Serif', serif;
     text-align: justify;
     color: #333;
-    background-image: url('images/haveUSeen_background_CIAmode.png');
+    background-image: url('assets/images/haveUSeen_background_CIAmode.png');
     background-repeat: repeat;
     margin: 0;
     padding: 0;
@@ -131,12 +131,12 @@ header {
 .left-nav li,
 .right-nav li {
     display: inline-block; /* Ensures list items are displayed in a line */
-    margin-right: 20px;
+    margin-right: 2em;
 }
 
 .left-nav li:last-child,
 .right-nav li:last-child {
-    margin-right: 0;
+    margin-right: 2em;
 }
 
 .left-nav li a,
@@ -157,6 +157,47 @@ header {
     background-color: #adadad00;
     padding: 50px 20px;
     text-align: center;
+}
+
+#links-music {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 1px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.image-wrapper-icons {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.image-wrapper-icons::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(150, 21, 21, 0); /* Initial color, transparent red */
+    transition: background-color 0.3s; /* Smooth transition effect */
+}
+
+.image-wrapper-icons:hover::before {
+    background-color: rgba(150, 21, 21, 0.5); /* Hover color, semi-transparent red */
+}
+
+.image-wrapper-icons:hover {
+    transform: scale(1.1);
+}
+
+.image-wrapper-icons img {
+    display: block;
+    width: 10%;
+    height: auto;
 }
 
 .youtube-income-container {
@@ -184,7 +225,7 @@ header {
 
 section {
     padding: 50px 20px;
-    text-align: justify-all;
+    text-align: center;
     text-size-adjust: 100%;
     margin: 0 auto; /* Center the paragraph horizontally */
     max-width: 1200px; /* Set a maximum width for the paragraph */
@@ -192,9 +233,12 @@ section {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #33333300;
+    color: #961515;
     text-align: center;
-    padding: 20px;
-    margin-top: 50px;
+    padding: 10px 0; /* Add padding to top and bottom */
 }
