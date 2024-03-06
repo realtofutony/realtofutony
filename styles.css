@@ -97,60 +97,47 @@ body {
     padding: 0;
 }
 
-header {
+.navbar {
     background-color: #1b1b1b;
-    padding: 5px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.logo-container {
-    width: 150px; /* Adjust the width as needed */
-    height: 100px; /* Adjust the height as needed */
+.nav-items {
+    list-style-type: none;
     display: flex;
-    justify-content: center;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
     align-items: center;
-    margin: 0 auto; /* Center the container */
+    text-align: center;
+    margin: auto;
+}
+
+.nav-items li {
+    margin-right: 10px;
+}
+
+.nav-items li:last-child {
+    margin-right: 0;
+}
+
+.nav-items li a {
+    font-size: 1.5em;
+    color: #333;
 }
 
 .logo {
-    max-width: 100%; /* Ensure the image fits inside the container */
-    max-height: 100%; /* Ensure the image fits inside the container */
-}
-
-.left-nav {
-    float: left;
-}
-
-.right-nav {
-    float: right;
-}
-
-.left-nav li,
-.right-nav li {
-    display: inline-block; /* Ensures list items are displayed in a line */
-    margin-right: 2em;
-}
-
-.left-nav li:last-child,
-.right-nav li:last-child {
-    margin-right: 2em;
-}
-
-.left-nav li a,
-.right-nav li a {
-    text-decoration: none;
-    color: #333;
+    width: 10vw;
 }
 
 .header1 {
     font-family: 'BN Cringe Serif', serif;
     font-weight: bold;
     font-style: normal;
-    font-size: 100px;
+    font-size: 10vw;
     color: #961515;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    margin: 10px;
 }
 
 #hero {
@@ -162,42 +149,38 @@ header {
 #links-music {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
-    gap: 1px;
-    padding-right: 10%;
-    padding-left: 10%;
+    justify-content: space-between;
+    height: auto;
+    width: auto;
 }
 
 .image-wrapper-icons {
-    position: relative;
-    width: 100%;
-    height: auto;
+    display: flex;
     overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-wrapper-icons::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: flex;
     width: 100%;
     height: 100%;
     background-color: rgba(150, 21, 21, 0); /* Initial color, transparent red */
     transition: background-color 0.3s; /* Smooth transition effect */
 }
 
-.image-wrapper-icons:hover::before {
-    background-color: rgba(150, 21, 21, 0.5); /* Hover color, semi-transparent red */
-}
-
 .image-wrapper-icons:hover {
     transform: scale(1.1);
+    transition: background-color 0.3s;;
+    background-color: rgba(150, 21, 21, 0.5);
 }
 
 .image-wrapper-icons img {
-    display: block;
-    width: 10%;
-    height: auto;
+    display: block; /* Use block display for images */
+    width: auto; /* Set width to auto to maintain aspect ratio */
+    height: 6vw; /* Set the height based on your desired size */
+    /* max-width: 100%; /* Ensure the image does not exceed its container's width */
+    /* max-height: 100%; Ensure the image does not exceed its container's height */
 }
 
 .youtube-income-container {
@@ -224,7 +207,7 @@ header {
 }
 
 section {
-    padding: 50px 20px;
+    padding: 10px 20px;
     text-align: center;
     text-size-adjust: 100%;
     margin: 0 auto; /* Center the paragraph horizontally */
@@ -233,9 +216,9 @@ section {
 }
 
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     background-color: #33333300;
     color: #961515;
