@@ -134,6 +134,7 @@ body {
     font-style: normal;
     font-size: 10vw;
     color: #961515;
+    -webkit-text-stroke: 3px black; /* For webkit browsers (Chrome, Safari) */
     display: flex;
     justify-content: center;
     white-space: nowrap;
@@ -146,12 +147,17 @@ body {
     text-align: center;
 }
 
+/* MUSIC LINKS */
+
 #links-music {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     height: auto;
     width: auto;
+    background-color: #ff515111;
+    backdrop-filter: blur(10px); /* Apply a blur effect */
+    border-radius: 30px; /* Add border-radius for rounded corners */
 }
 
 .image-wrapper-icons {
@@ -173,6 +179,7 @@ body {
     transform: scale(1.1);
     transition: background-color 0.3s;;
     background-color: rgba(150, 21, 21, 0.5);
+    border-radius: 20px
 }
 
 .image-wrapper-icons img {
@@ -205,6 +212,39 @@ body {
 .btn:hover {
     background-color: #555;
 }
+
+/* GALLERY */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-item {
+    flex: 1 1 200px; /* Each item is at least 200px wide */
+    max-width: calc(33.33% - 20px); /* Three items per row on larger screens */
+    box-sizing: border-box;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        max-width: calc(50% - 20px); /* Two items per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        max-width: calc(100% - 20px); /* One item per row on even smaller screens */
+    }
+}
+
 
 section {
     padding: 10px 20px;
