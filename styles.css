@@ -95,7 +95,10 @@ body {
     background-repeat: repeat;
     margin: 0;
     padding: 0;
+    
 }
+
+
 
 .navbar {
     background-color: #1b1b1b;
@@ -120,7 +123,7 @@ body {
 }
 
 .nav-items li a {
-    font-size: 1.5em;
+    font-size: 3vw;
     color: #333;
 }
 
@@ -134,12 +137,41 @@ body {
     font-style: normal;
     font-size: 10vw;
     color: #961515;
-    -webkit-text-stroke: 3px black; /* For webkit browsers (Chrome, Safari) */
+    /* -webkit-text-stroke: 3px black; */
     display: flex;
     justify-content: center;
     white-space: nowrap;
     margin: 10px;
+    background-color: #00000086;
+    backdrop-filter: blur(10px); /* Apply a blur effect */
+    border-radius: 30px; /* Add border-radius for rounded corners */
 }
+
+.header2 {
+    font-family: 'BN Cringe Serif', serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 5vw;
+    color: #961515;
+    /* -webkit-text-stroke: 3px black; */
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    margin: 10px;
+    background-color: #00000086;
+    backdrop-filter: blur(10px); /* Apply a blur effect */
+    border-radius: 30px; /* Add border-radius for rounded corners */
+}
+
+.tofutonyscratch-gif {
+    display: flex;
+    justify-content: center;
+}
+
+.tofutonyscratch-gif img {
+    width: 20vw;
+}
+
 
 #hero {
     background-color: #adadad00;
@@ -155,9 +187,10 @@ body {
     justify-content: space-between;
     height: auto;
     width: auto;
-    background-color: #ff515111;
+    background-color: #b3181886;
     backdrop-filter: blur(10px); /* Apply a blur effect */
     border-radius: 30px; /* Add border-radius for rounded corners */
+    margin-bottom: 20px;
 }
 
 .image-wrapper-icons {
@@ -191,13 +224,51 @@ body {
 }
 
 .youtube-income-container {
-    width: auto; /* Adjust the width as needed */
-    height: auto; /* Adjust the height as needed */
-    display: flex;
+    /* width: auto; */
+    /* height: auto; */
+    /* display: flex; */
     justify-content: center;
     align-items: center;
-    margin: 0 auto; /* Center the container */
+    /* margin: 0 auto; */
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100) */
+    /* height: 0; */
+    overflow: hidden;
 }
+
+.youtube-income-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* CONTACT */
+#contact-links {
+    text-align: center;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+#contact-links a {
+    text-decoration: none;
+    /* color: inherit; */
+    font-size: 3vw;
+    background-color: #b3181886;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
 
 .btn {
     display: inline-block;
@@ -219,6 +290,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    margin-left: 3vw;
+    margin-right: 3vw;
 }
 
 .gallery-item {
@@ -243,6 +316,36 @@ body {
     .gallery-item {
         max-width: calc(100% - 20px); /* One item per row on even smaller screens */
     }
+}
+
+/* MUSIC AND LYRICS */
+.container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.lyrics-container {
+    max-width: 800px;
+    margin: 0 20px; /* Adjust the left and right margin as needed */
+    padding: 0;
+    text-align: left;
+}
+
+.lyrics-container iframe {
+    width: 100%;
+    height: 315px;
+}
+
+.lyrics-container h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.lyrics-container p {
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 
