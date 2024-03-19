@@ -137,7 +137,6 @@ body {
     font-style: normal;
     font-size: 10vw;
     color: #961515;
-    /* -webkit-text-stroke: 3px black; */
     display: flex;
     justify-content: center;
     white-space: nowrap;
