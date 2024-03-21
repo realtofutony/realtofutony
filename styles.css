@@ -178,6 +178,13 @@ body {
     text-align: center;
 }
 
+/* INSTAGRAM FEED */
+#instagram-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* MUSIC LINKS */
 
 #links-music {
