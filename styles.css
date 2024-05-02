@@ -98,6 +98,22 @@ body {
     
 }
 
+body.with-overlay {
+    position: relative;
+}
+
+body.with-overlay::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.897); /* Adjust the alpha value (last parameter) for opacity */
+    z-index: -1; /
+}
+
 
 
 .navbar {
@@ -183,6 +199,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 /* MUSIC LINKS */
@@ -196,8 +213,53 @@ body {
     background-color: #b3181886;
     backdrop-filter: blur(10px); /* Apply a blur effect */
     border-radius: 30px; /* Add border-radius for rounded corners */
-    margin-bottom: 20px;
+    margin-top: 40px;
 }
+
+.album-preview {
+    display: flex;
+    align-items: start;
+    margin-bottom: 20px;
+    background-color: #000000db;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+}
+
+.image-link {
+    flex: 0 0 150px; /* Fixed width for the image */
+    margin-right: 20px;
+}
+
+.image-link img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content {
+    flex: 1;
+}
+
+.title-link {
+    text-decoration: none;
+    color: #961515;
+}
+
+.title {
+    display: flex;
+    justify-content: left;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.description {
+    display: flex;
+    justify-content: left;
+    margin: 0;
+    line-height: 1.5;
+    color: #961515;
+}
+/* end of MUSIC LINKS */
+
 
 .image-wrapper-icons {
     display: flex;
@@ -354,6 +416,76 @@ body {
     line-height: 1.5;
 }
 
+/* IN YOUR DREAMS */
+.project-main {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #00000086;
+    backdrop-filter: blur(10px);
+}
+
+.album-cover {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.album-title {
+    font-size: 30px;
+    margin: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
+.tracklist-section {
+    margin-top: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.track {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.track-title {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.lyrics-link {
+    text-align: right;
+    padding: 5px;
+}
+
+.description-section {
+    margin-top: 20px;
+}
+
+.album-description {
+    font-style: italic;
+}
+
+.soundcloud-embed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.soundcloud-embed iframe {
+    width: 85vw;
+}
+/* end IN YOUR DREAMS */
+
+
+.horizontal-rule {
+    /* display: flex;
+    justify-content: center; */
+    margin-top: 15px;
+    border-bottom: #1b1b1b solid 5px;
+}
 
 section {
     padding: 10px 20px;
