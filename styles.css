@@ -240,7 +240,7 @@ body.with-overlay::after {
 }
 
 .title-link {
-    text-decoration: none;
+    text-decoration: underline;
     color: #961515;
 }
 
@@ -257,6 +257,15 @@ body.with-overlay::after {
     margin: 0;
     line-height: 1.5;
     color: #961515;
+}
+
+.heading-section{
+    font-size: 3vw;
+    display: flex;
+    /* align-items: flex-start; */
+    justify-content: left;
+    border-bottom: #1b1b1b solid 5px;
+    padding: 0%;
 }
 /* end of MUSIC LINKS */
 
@@ -479,6 +488,10 @@ body.with-overlay::after {
 }
 /* end IN YOUR DREAMS */
 
+.lyrics-block{
+    text-align: center;
+    font-size: 3vw;
+}
 
 .horizontal-rule {
     /* display: flex;
