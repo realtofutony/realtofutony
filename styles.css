@@ -143,6 +143,10 @@ body.with-overlay::after {
     color: #961515;
 }
 
+.nav-items a:hover {
+    color: #555;
+}
+
 .logo {
     width: 10vw;
 }
@@ -151,7 +155,7 @@ body.with-overlay::after {
     font-family: 'BN Cringe Serif', serif;
     font-weight: bold;
     font-style: normal;
-    font-size: 10vw;
+    font-size: clamp(1vw, 8vw, 125px);
     color: #961515;
     display: flex;
     justify-content: center;
@@ -225,33 +229,37 @@ body.with-overlay::after {
     border-radius: 5px;
 }
 
-.image-link {
+.preview-image-link {
     flex: 0 0 150px; /* Fixed width for the image */
     margin-right: 20px;
 }
 
-.image-link img {
+.preview-image-link img {
     max-width: 100%;
     height: auto;
 }
 
-.content {
+.preview-content {
     flex: 1;
 }
 
-.title-link {
+.preview-title-link {
     text-decoration: underline;
     color: #961515;
 }
+.preview-title-link:hover {
+    text-decoration: none;
+    color: #c13838;
+}
 
-.title {
+.preview-title {
     display: flex;
     justify-content: left;
     margin-top: 0;
     margin-bottom: 10px;
 }
 
-.description {
+.preview-description {
     display: flex;
     justify-content: left;
     margin: 0;
@@ -259,13 +267,16 @@ body.with-overlay::after {
     color: #961515;
 }
 
-.heading-section{
-    font-size: 3vw;
+.music-heading-section{
+    font-size: 2em;
     display: flex;
-    /* align-items: flex-start; */
     justify-content: left;
     border-bottom: #1b1b1b solid 5px;
-    padding: 0%;
+    padding: 0;
+    margin-bottom: 15px;
+}
+.music-heading-section p{
+    margin-bottom: 0px;
 }
 /* end of MUSIC LINKS */
 
@@ -360,7 +371,7 @@ body.with-overlay::after {
 .btn:hover {
     background-color: #555;
 }
-
+/* end CONTACT end */
 /* GALLERY */
 
 .gallery {
@@ -394,7 +405,7 @@ body.with-overlay::after {
         max-width: calc(100% - 20px); /* One item per row on even smaller screens */
     }
 }
-
+/* end GALLERY end */
 /* MUSIC AND LYRICS */
 .container {
     display: flex;
@@ -425,11 +436,73 @@ body.with-overlay::after {
     line-height: 1.5;
 }
 
+.lyrics-album-heading {
+    display: flex;
+    justify-content: start;
+    background-color: #00000086;
+    backdrop-filter: blur(10px);
+    max-width: 850px;
+    padding: 20px; /* Add padding for spacing */
+}
+
+.lyrics-album-art {
+    max-width: 200px; /* Adjust as needed */
+    margin-right: 20px; /* Space between album art and song details */
+    height: auto;
+}
+
+.lyrics-song-details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.lyrics-song-title {
+    font-size: auto;
+    margin: 0;
+    flex-wrap: nowrap;
+    color: #6d6d6d;
+}
+
+.lyrics-album-link {
+    color: #961515;
+    text-decoration: underline;
+}
+
+.lyrics-release-date {
+    margin-top: auto; /* Push to the bottom */
+    text-align: left; /* Align to the left */
+}
+
+.lyrics-block{
+    text-align: center;
+    font-size: 3vw;
+    color: #6d6d6d;
+}
+
+.song-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.song-buttons a {
+    margin: 0 10px; /* Add space between links */
+    padding: 10px 20px;
+    color: #431717;
+    text-decoration: underline;
+    font-size: 2vw;
+}
+
+.song-buttons a:hover {
+    color: #c13838;
+}
+
 /* IN YOUR DREAMS */
 .project-main {
     max-width: 800px;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 20x;
     padding: 20px;
     text-align: center;
     background-color: #00000086;
@@ -467,6 +540,11 @@ body.with-overlay::after {
 .lyrics-link {
     text-align: right;
     padding: 5px;
+    color: #961515;
+}
+
+.lyrics-link:hover {
+    color: #c13838;
 }
 
 .description-section {
@@ -488,10 +566,7 @@ body.with-overlay::after {
 }
 /* end IN YOUR DREAMS */
 
-.lyrics-block{
-    text-align: center;
-    font-size: 3vw;
-}
+
 
 .horizontal-rule {
     /* display: flex;
