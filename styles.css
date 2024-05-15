@@ -90,7 +90,7 @@
 body {
     font-family: 'BN Cringe Serif', serif;
     text-align: justify;
-    color: #333;
+    color: #909090;
     background-image: url('assets/images/haveUSeen_background_CIAmode.png');
     background-repeat: repeat;
     margin: 0;
@@ -267,13 +267,23 @@ body.with-overlay::after {
     color: #961515;
 }
 
+.preview-lyrics-link {
+    display: flex;
+    margin-top: 10%;
+    text-align: left;
+    color: red;
+    text-decoration: underline;
+    font-style: italic;
+}
+
 .music-heading-section{
-    font-size: 2em;
+    font-size: min(5vw, 50px);
     display: flex;
     justify-content: left;
-    border-bottom: #1b1b1b solid 5px;
+    border-bottom: #909090 solid 5px;
     padding: 0;
     margin-bottom: 15px;
+    color: #909090
 }
 .music-heading-section p{
     margin-bottom: 0px;
@@ -461,12 +471,18 @@ body.with-overlay::after {
     font-size: auto;
     margin: 0;
     flex-wrap: nowrap;
-    color: #6d6d6d;
+    color: #b3b3b3;
 }
 
 .lyrics-album-link {
+    font-size: 1.5em;
     color: #961515;
     text-decoration: underline;
+}
+
+.lyrics-album-link:hover{
+    text-decoration: none;
+    color: #c13838;
 }
 
 .lyrics-release-date {
@@ -476,8 +492,43 @@ body.with-overlay::after {
 
 .lyrics-block{
     text-align: center;
-    font-size: 3vw;
-    color: #6d6d6d;
+    font-size: min(3vw, 32px);
+    color: #b3b3b3;
+}
+
+.lyrics-tracklist-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    flex-direction: row;
+}
+.lyrics-tracklist-box1 {
+    width: 50%;
+}
+.lyrics-tracklist-box2 {
+    width: 50%;
+}
+
+.lyrics-track {
+    margin-bottom: 10px;
+    font-size: 1em;
+    text-decoration: underline;
+    color: #b3b3b3;
+    font-style: italic;
+}
+
+.lyrics-track-highlighted {
+    margin-bottom: 10px;
+    font-size: 1em;
+    text-decoration: underline;
+    color: #961515;
+    font-style: italic;
+}
+
+
+.lyrics-track:hover {
+    text-decoration: none;
+    color: #c13838;
 }
 
 .song-buttons {
@@ -489,9 +540,10 @@ body.with-overlay::after {
 .song-buttons a {
     margin: 0 10px; /* Add space between links */
     padding: 10px 20px;
-    color: #431717;
+    color: #ac1717;
     text-decoration: underline;
-    font-size: 2vw;
+    font-size: min(3vw, 35px);
+    flex-wrap: nowrap;
 }
 
 .song-buttons a:hover {
