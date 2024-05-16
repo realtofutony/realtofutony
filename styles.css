@@ -95,7 +95,7 @@ body {
     background-repeat: repeat;
     margin: 0;
     padding: 0;
-    
+    overflow-x: hidden;
 }
 
 body.with-overlay {
@@ -198,6 +198,47 @@ body.with-overlay::after {
     text-align: center;
 }
 
+.scrolling-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.scrolling-text {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bold;
+    white-space: nowrap;
+    animation: scroll 10s linear infinite, gray-red 5s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100vw);
+    }
+    100% {
+        transform: translateX(-100vw);
+    }
+}
+@keyframes rainbow {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: blue; }
+    71% { color: indigo; }
+    85% { color: violet; }
+    100% { color: red; }
+}
+@keyframes gray-red {
+    0% { color: #909090; }
+    50% { color: #961515;}
+    100% { color: #909090; }
+}
+
+
+
 /* INSTAGRAM FEED */
 #instagram-container {
     display: flex;
@@ -273,7 +314,8 @@ body.with-overlay::after {
     text-align: left;
     color: red;
     text-decoration: underline;
-    font-style: italic;
+    font-style: italic; 
+    animation: rainbow 4s linear infinite;
 }
 
 .music-heading-section{
