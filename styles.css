@@ -237,14 +237,11 @@ body.with-overlay::after {
     100% { color: #909090; }
 }
 
-
-
 /* INSTAGRAM FEED */
 #instagram-container {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 /* MUSIC LINKS */
@@ -255,11 +252,47 @@ body.with-overlay::after {
     justify-content: space-between;
     height: auto;
     width: auto;
+    max-width: 85%;
     background-color: #b3181886;
     backdrop-filter: blur(10px); /* Apply a blur effect */
     border-radius: 30px; /* Add border-radius for rounded corners */
-    margin-top: 40px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
+
+.image-wrapper-icons {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border-color: #909090;
+    border-width: 2px;
+}
+
+.image-wrapper-icons::before {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(150, 21, 21, 0); /* Initial color, transparent red */
+    transition: background-color 0.3s; /* Smooth transition effect */
+}
+
+.image-wrapper-icons:hover {
+    transform: scale(1.1);
+    transition: background-color 0.3s;;
+    background-color: rgba(150, 21, 21, 0.5);
+    border-radius: 20px
+}
+
+.image-wrapper-icons img {
+    display: block; /* Use block display for images */
+    width: auto; /* Set width to auto to maintain aspect ratio */
+    height: 6vw; /* Set the height based on your desired size */
+    /* max-width: 100%; /* Ensure the image does not exceed its container's width */
+    /* max-height: 100%; Ensure the image does not exceed its container's height */
+}
+
+/* MUSIC + LYRICS ALBUM PREVIEWS LINKS BOXES */
 
 .album-preview {
     display: flex;
@@ -268,6 +301,8 @@ body.with-overlay::after {
     background-color: #000000db;
     backdrop-filter: blur(10px);
     border-radius: 5px;
+    width: auto;
+    max-width: 80%;
 }
 
 .preview-image-link {
@@ -282,6 +317,7 @@ body.with-overlay::after {
 
 .preview-content {
     flex: 1;
+    flex-wrap: wrap;
 }
 
 .preview-title-link {
@@ -333,35 +369,7 @@ body.with-overlay::after {
 /* end of MUSIC LINKS */
 
 
-.image-wrapper-icons {
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-}
 
-.image-wrapper-icons::before {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(150, 21, 21, 0); /* Initial color, transparent red */
-    transition: background-color 0.3s; /* Smooth transition effect */
-}
-
-.image-wrapper-icons:hover {
-    transform: scale(1.1);
-    transition: background-color 0.3s;;
-    background-color: rgba(150, 21, 21, 0.5);
-    border-radius: 20px
-}
-
-.image-wrapper-icons img {
-    display: block; /* Use block display for images */
-    width: auto; /* Set width to auto to maintain aspect ratio */
-    height: 6vw; /* Set the height based on your desired size */
-    /* max-width: 100%; /* Ensure the image does not exceed its container's width */
-    /* max-height: 100%; Ensure the image does not exceed its container's height */
-}
 
 .youtube-income-container {
     /* width: auto; */
@@ -665,8 +673,10 @@ body.with-overlay::after {
 .horizontal-rule {
     /* display: flex;
     justify-content: center; */
-    margin-top: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     border-bottom: #1b1b1b solid 5px;
+    max-width: 90%;
 }
 
 section {
