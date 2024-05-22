@@ -110,14 +110,14 @@ body.with-overlay::after {
     transform: translateX(-50%);
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.897); /* Adjust the alpha value (last parameter) for opacity */
+    background-color: rgba(0, 0, 0, 0.815); /* Adjust the alpha value (last parameter) for opacity */
     z-index: -1; /
 }
 
 
 
 .navbar {
-    background-color: #1b1b1b;
+    background: linear-gradient(to bottom, black 0%, #0b0b0be6 70%, #33333300 100%);
     justify-content: center;
 }
 
@@ -134,7 +134,7 @@ body.with-overlay::after {
 
 .nav-items li {
     margin-right: 10px;
-    padding: 15px;
+    padding: 1vw;
 }
 
 .nav-items li:last-child {
@@ -309,7 +309,8 @@ body.with-overlay::after {
 }
 
 .preview-image-link {
-    flex: 0 0 150px; /* Fixed width for the image */
+    max-width: 150px;
+    min-width: 75px;
     margin-right: 20px;
 }
 
@@ -327,6 +328,7 @@ body.with-overlay::after {
 .preview-title-link {
     text-decoration: underline;
     color: #961515;
+    /* font-size: 5vw; */
 }
 .preview-title-link:hover {
     text-decoration: none;
@@ -338,6 +340,7 @@ body.with-overlay::after {
     justify-content: left;
     margin-top: 0;
     margin-bottom: 10px;
+    max-width: 100%;
 }
 
 .preview-description {
@@ -378,10 +381,13 @@ body.with-overlay::after {
     border-bottom: #909090 solid 5px;
     padding: 0;
     margin-bottom: 15px;
-    color: #909090
+    color: #909090;
+    background: linear-gradient(to top, black 0%, #33333300 100%);
+    max-width: 100%;
 }
 .music-heading-section p{
     margin-bottom: 0px;
+    padding-left: 7%;
 }
 /* end of MUSIC LINKS */
 
@@ -417,20 +423,17 @@ body.with-overlay::after {
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
+    background: linear-gradient(to top, black 0%, #33333300 50%, black 100%);
+
 }
 
 #contact-links a {
-    text-decoration: none;
-    /* color: inherit; */
-    font-size: 4vw;
-    background-color: #b3181886;
-    backdrop-filter: blur(10px);
-    border-radius: 30px;
+    text-decoration: underline;
+    color: whitesmoke;
+    font-size: 8vw;
     margin-bottom: 20px;
     display: flex;
     overflow: hidden;
-    justify-content: center;
-    align-items: center;
     flex-flow: column wrap;
 }
 
@@ -523,9 +526,15 @@ body.with-overlay::after {
 }
 
 .lyrics-album-art {
-    max-width: 200px; /* Adjust as needed */
-    margin-right: 20px; /* Space between album art and song details */
+    max-width: 200px;
+    margin-right: 20px;
     height: auto;
+    width: 35vw;
+}
+
+.lyrics-album-art-parent {
+    display: block;
+    align-content: center;
 }
 
 .lyrics-song-details {
@@ -605,12 +614,13 @@ body.with-overlay::after {
 }
 
 .song-buttons a {
-    margin: 0 10px; /* Add space between links */
-    padding: 10px 20px;
+    margin: 0 2vw;
+    padding: 10px 0;
     color: #ac1717;
     text-decoration: underline;
-    font-size: min(3vw, 35px);
+    font-size: min(4vw, 35px);
     flex-wrap: nowrap;
+    white-space: nowrap;
 }
 
 .song-buttons a:hover {
@@ -694,6 +704,8 @@ body.with-overlay::after {
     margin-bottom: 25px;
     border-bottom: #1b1b1b solid 5px;
     max-width: 90%;
+    font-size: 2.5vw;
+    padding: 0;
 }
 
 section {
