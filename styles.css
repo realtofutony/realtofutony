@@ -95,7 +95,7 @@ body {
     background-repeat: repeat;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 body.with-overlay {
@@ -118,20 +118,23 @@ body.with-overlay::after {
 
 .navbar {
     background-color: #1b1b1b;
+    justify-content: center;
 }
 
 .nav-items {
     list-style-type: none;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     text-align: center;
     margin: auto;
+    padding-left: 0;
 }
 
 .nav-items li {
     margin-right: 10px;
+    padding: 15px;
 }
 
 .nav-items li:last-child {
@@ -316,8 +319,9 @@ body.with-overlay::after {
 }
 
 .preview-content {
-    flex: 1;
+    /* display: flex; */
     flex-wrap: wrap;
+    max-width: 100%;
 }
 
 .preview-title-link {
@@ -338,10 +342,23 @@ body.with-overlay::after {
 
 .preview-description {
     display: flex;
-    justify-content: left;
+    text-align: left;
     margin: 0;
     line-height: 1.5;
     color: #961515;
+    text-wrap: wrap;
+}
+.preview-description a {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: block;
+    line-height: 1.5;
+    color: #909090;
+    text-wrap: wrap;
+}
+.preview-description a:hover {
+    text-decoration: none;
+    color: #c13838;
 }
 
 .preview-lyrics-link {
@@ -697,4 +714,22 @@ footer {
     color: #961515;
     text-align: center;
     padding: 10px 0; /* Add padding to top and bottom */
+}
+
+#announcement {
+    background: linear-gradient(to bottom, #6b0b0b, rgba(255, 0, 0, 0));
+    animation: blurAnimation 3s infinite;
+    backdrop-filter: blur(10px);
+    max-width: 100%;
+}
+@keyframes blurAnimation {
+    0% {
+        filter: blur(2px);
+    }
+    50% {
+        filter: blur(0px);
+    }
+    100% {
+        filter: blur(2px);
+    }
 }
