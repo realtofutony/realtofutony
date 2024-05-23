@@ -119,6 +119,8 @@ body.with-overlay::after {
 .navbar {
     background: linear-gradient(to bottom, black 0%, #0b0b0be6 70%, #33333300 100%);
     justify-content: center;
+    max-height: 190px;
+    min-height: 50px;
 }
 
 .nav-items {
@@ -130,6 +132,7 @@ body.with-overlay::after {
     text-align: center;
     margin: auto;
     padding-left: 0;
+    max-height: 190px;
 }
 
 .nav-items li {
@@ -142,7 +145,7 @@ body.with-overlay::after {
 }
 
 .nav-items li a {
-    font-size: 3vw;
+    font-size: min(4.5vw, 100px);
     color: #961515;
 }
 
