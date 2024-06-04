@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+#gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pongCanvas {
+    border: 1px solid white;
+    background-color: black;
+}
+
+#score {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.hidden {
+    display: none;
+}
+
+#gameOver {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
