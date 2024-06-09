@@ -748,3 +748,28 @@ footer {
         filter: blur(2px);
     }
 }
+
+
+/* SHOWS PAGE */
+.shows-section {
+    max-width: 1800px;
+    margin: 0 auto;
+    margin-bottom: 20x;
+    padding: 20px;
+    text-align: center;
+    background-color: #0000009e;
+    backdrop-filter: blur(10px);
+    font-size: 2.7vw;
+}
+
+.shows-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#shows-link {
+    color: #961515;
+    border: 2px, solid, #9615159c;
+    padding: 4px;
+}
