@@ -85,6 +85,46 @@
     </section>
 
     <section class="horizontal-rule"></section>
+    <div class="testimonials">
+        <div class="testimonial left">
+            <p>"The beginning of the song is good, I like the dynamic changes in the rhythm, the pad sounds are very good 
+                and well balanced, added to the choruses, they generate a very interesting atmosphere. 
+                A good track that keeps you entertained!"
+                <br><i>- Sumbithub.com Verified Reviewer</i></p>
+        </div>
+        <div class="testimonial right">
+            <p>"NIce beat! Good production mix well done balanced, great variation in beat. Performance is very well executed! I like it how agresive calm part changes! With best regards keep it up keep this fire"
+                <br><i>- Sumbithub.com Reviewer</i></p>
+        </div>
+        <div class="testimonial left">
+            <p>"Good vibes and really feeling the British and American infusion "
+                <br><i>- ForeverAnti via Submithub.com</i></p>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const testimonials = document.querySelectorAll('.testimonial');
+    
+            const observerOptions = {
+                threshold: 0.1
+            };
+    
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+    
+            testimonials.forEach(testimonial => {
+                observer.observe(testimonial);
+            });
+        });
+    </script>
+    <section class="horizontal-rule"></section>
 <section id="instagram-container">
         <blockquote class="instagram-media" 
         data-instgrm-permalink="https://www.instagram.com/tofu__tony/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" 
@@ -117,6 +157,8 @@
                                     (@<a href="https://www.instagram.com/tofu__tony/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">tofu__tony</a>) • Instagram photos and videos</p></div></blockquote> 
                                     <script async src="//www.instagram.com/embed.js"></script>
 </section>
+
+
 
 
     <section><a href="#"><img style="max-width: 15vw; min-width: 100px;" src="/assets/images/gifs/TofuTonyScratch_gif500.gif" alt="Tofu Tony Logo"></a></section>

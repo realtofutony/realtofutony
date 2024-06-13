@@ -4,16 +4,214 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pong Game</title>
-    <link rel="stylesheet" href="/games/pong/pongStyle.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        #score {
+            display: flex;
+            justify-content: space-between;
+            width: 200px;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        #gameCanvas {
+            border: 2px solid white;
+            background: black;
+        }
+
+        #resetButton {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: white;
+            color: black;
+            border: none;
+            cursor: pointer;
+        }
+
+        #ballImage {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    <div id="gameContainer">
-        <canvas id="pongCanvas"></canvas>
-        <div id="score">Score: 0</div>
-            <p>Your Score: <span id="finalScore">0</span></p>
-            <button id="restartButton">Restart</button>
-        </div>
-    </div>
-    <script src="/games/pong/pongScript.js"></script>
+
+
+    <!-- ############################### -->
+    <!-- ############################### -->
+    <!-- ##                           ## -->
+    <!-- ##                           ## -->
+    <!-- ##  +add scaling canvas      ##  -->
+    <!-- ##     and make sure its 1:1 ##  -->
+    <!-- ##  +fix ball collision      ##  -->
+    <!-- ##                           ## -->
+    <!-- ############################### -->
+    <!-- ############################### -->
+
+
+<div id="score">
+    <span>Player: <span id="playerScore">0</span></span>
+    <span>CPU: <span id="cpuScore">0</span></span>
+</div>
+<canvas id="gameCanvas" width="800" height="400"></canvas>
+<button id="resetButton">Reset</button>
+<img id="ballImage" src="/assets/images/tonyBall.png" style="display:none;">
+
+<script>
+    const canvas = document.getElementById('gameCanvas');
+    const context = canvas.getContext('2d');
+    const playerScoreElem = document.getElementById('playerScore');
+    const cpuScoreElem = document.getElementById('cpuScore');
+    const resetButton = document.getElementById('resetButton');
+    const ballImage = document.getElementById('ballImage');
+
+    let playerScore = 0;
+    let cpuScore = 0;
+    let playerPaddleY = canvas.height / 2 - 50;
+    let cpuPaddleY = canvas.height / 2 - 50;
+    let ballX = canvas.width / 2;
+    let ballY = canvas.height / 2;
+    let ballSpeedX = 5;
+    let ballSpeedY = 2;
+    let ballSpeedIncreaseInterval;
+
+    const paddleWidth = 10;
+    const paddleHeight = 100;
+    const ballSize = 45;
+    const paddleSpeed = 8;
+    const ballSpeedIncreaseRate = 0.05;
+    const aiErrorChance = 0.2; // 20% chance for AI to make a mistake
+    const pressedKeys = {};
+
+    function drawRect(x, y, width, height) {
+        context.fillStyle = 'white';
+        context.fillRect(x, y, width, height);
+    }
+
+    function drawImage(x, y, width, height, img) {
+        context.drawImage(img, x - width / 2, y - height / 2, width, height);
+    }
+
+    function resetBall() {
+        ballX = canvas.width / 2;
+        ballY = canvas.height / 2;
+        ballSpeedX = Math.random() > 0.5 ? 5 : -5;
+        ballSpeedY = (Math.random() > 0.5 ? 2 : -2);
+    }
+
+    function moveCPU() {
+        const paddleCenter = cpuPaddleY + paddleHeight / 2;
+        if (Math.random() > aiErrorChance) {
+            if (paddleCenter < ballY - 35) {
+                cpuPaddleY += paddleSpeed - 2; // Reduce speed to make AI easier
+            } else if (paddleCenter > ballY + 35) {
+                cpuPaddleY -= paddleSpeed - 2; // Reduce speed to make AI easier
+            }
+        }
+    }
+
+    function moveBall() {
+        ballX += ballSpeedX;
+        ballY += ballSpeedY;
+
+        if (ballY <= 0 || ballY >= canvas.height - ballSize) {
+            ballSpeedY = -ballSpeedY;
+        }
+
+        if (ballX <= paddleWidth) {
+            if (ballY >= playerPaddleY && ballY <= playerPaddleY + paddleHeight) {
+                ballSpeedX = -ballSpeedX;
+            } else if (ballX <= -ballSize / 2) { // Only count as hitting edge when 50% of the ball goes past the canvas
+                cpuScore++;
+                resetBall();
+            }
+        }
+
+        if (ballX >= canvas.width - paddleWidth - ballSize) {
+            if (ballY >= cpuPaddleY && ballY <= cpuPaddleY + paddleHeight) {
+                ballSpeedX = -ballSpeedX;
+            } else if (ballX >= canvas.width + ballSize / 2 - paddleWidth) { // Only count as hitting edge when 50% of the ball goes past the canvas
+                playerScore++;
+                resetBall();
+            }
+        }
+    }
+
+    function draw() {
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        drawRect(0, playerPaddleY, paddleWidth, paddleHeight);
+        drawRect(canvas.width - paddleWidth, cpuPaddleY, paddleWidth, paddleHeight);
+        drawImage(ballX, ballY, ballSize, ballSize, ballImage);
+
+        playerScoreElem.textContent = playerScore;
+        cpuScoreElem.textContent = cpuScore;
+    }
+
+    function gameLoop() {
+        moveCPU();
+        moveBall();
+        movePlayer();
+        draw();
+    }
+
+    function handleKeyDown(event) {
+        pressedKeys[event.key] = true;
+    }
+
+    function handleKeyUp(event) {
+        pressedKeys[event.key] = false;
+    }
+
+    function movePlayer() {
+        if (pressedKeys['ArrowUp'] || pressedKeys['w']) {
+            playerPaddleY -= paddleSpeed;
+            if (playerPaddleY < 0) playerPaddleY = 0;
+        }
+        if (pressedKeys['ArrowDown'] || pressedKeys['s']) {
+            playerPaddleY += paddleSpeed;
+            if (playerPaddleY > canvas.height - paddleHeight) playerPaddleY = canvas.height - paddleHeight;
+        }
+    }
+
+    function handleTouch(event) {
+        event.preventDefault(); // Prevents page scrolling
+        const touchY = event.touches[0].clientY - canvas.getBoundingClientRect().top;
+        playerPaddleY = touchY - paddleHeight / 2;
+        if (playerPaddleY < 0) playerPaddleY = 0;
+        if (playerPaddleY > canvas.height - paddleHeight) playerPaddleY = canvas.height - paddleHeight;
+    }
+
+    function resetGame() {
+        playerScore = 0;
+        cpuScore = 0;
+        playerPaddleY = canvas.height / 2 - paddleHeight / 2;
+        cpuPaddleY = canvas.height / 2 - paddleHeight / 2;
+        resetBall();
+        clearInterval(ballSpeedIncreaseInterval);
+        ballSpeedIncreaseInterval = setInterval(() => {
+            ballSpeedX *= (1 + ballSpeedIncreaseRate);
+            ballSpeedY *= (1 + ballSpeedIncreaseRate);
+        }, 1000);
+    }
+
+    document.addEventListener('keydown', handleKeyDown);
+    document.addEventListener('keyup', handleKeyUp);
+    canvas.addEventListener('touchmove', handleTouch, { passive: false }); // { passive: false } to allow preventDefault
+    resetButton.addEventListener('click', resetGame);
+
+    setInterval(gameLoop, 1000 / 60);
+    resetGame();
+</script>
+
 </body>
 </html>
