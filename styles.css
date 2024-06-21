@@ -761,6 +761,11 @@ footer {
     backdrop-filter: blur(10px);
     font-size: 3.5vw;
 }
+.shows-section.past {
+    max-width: 1500px;
+    background-color: #160000dc;
+    font-style: italic;
+}
 
 .shows-list-item {
     display: flex;
