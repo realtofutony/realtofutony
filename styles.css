@@ -487,6 +487,9 @@ body.with-overlay::after {
     .gallery-item {
         max-width: calc(100% - 20px); /* One item per row on even smaller screens */
     }
+    .gallery {
+        justify-content: center;
+    }
 }
 /* end GALLERY end */
 /* MUSIC AND LYRICS */
@@ -732,7 +735,7 @@ footer {
 }
 
 #announcement {
-    background: linear-gradient(to bottom, #6b0b0b, rgba(255, 0, 0, 0));
+    background: linear-gradient(to bottom, #3f0606, rgba(255, 0, 0, 0));
     animation: blurAnimation 3s infinite;
     backdrop-filter: blur(10px);
     max-width: 100%;
@@ -741,7 +744,7 @@ footer {
     0% {
         filter: blur(2px);
     }
-    50% {
+    75% {
         filter: blur(0px);
     }
     100% {
