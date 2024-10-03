@@ -63,6 +63,14 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Consolas';
+    src: url('fonts/CONSOLA.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 .normal-text {
     font-family: 'BN Cringe Serif', serif;
     font-weight: normal;
@@ -809,4 +817,55 @@ footer {
     opacity: 100;
     transform: translateY(0);
 }
+/* /////////////////////// */
+/* /////////////////////// */
+.notepad-lyrics {
+    font-family: 'Consolas', monospace;
+    background-color: rgb(255, 255, 255);
+    color: #1b1b1b;
+    padding-left: 10vw;
+    text-align: left;
+}
+.dynamic-lyrics-container {
+    text-align: center;
+}
+
+.song-button-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.song-button {
+    margin: 5px; /* Increased margin for better spacing */
+    padding: 5px; /* Added padding for a larger button area */
+    border: none;  /* No border */
+    background: none; /* No background */
+    color: #000000; /* Text color */
+    font-size: 24px; /* Increased font size */
+    font-family: 'BN Cringe Serif';
+    cursor: pointer;
+    text-align: left; /* Align text to the left */
+    transition: color 0.3s;
+    border-radius: 5px;
+}
+
+.song-button:hover {
+    background-color: #b30101;
+}
+
+.song-button.active {
+    background-color: #b30101; /* Active button background */
+    color: #ffffff; /* Optional: change text color for better contrast */
+}
+
+.lyrics-display {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    min-height: 100px;
+}
+/* /////////////////////// */
 /* /////////////////////// */
