@@ -1,10 +1,143 @@
 function displayLyrics(songKey) {
     const lyricsData = {
-        song1: "Lyrics for Song 1...\nVerse 1...\nChorus...",
+        song1: `Featuring: LucyV, Headband Henny
+        
+I’m sailing on the ocean and the high seas
+Spray upon me, like a zombie
+Way my heart bleeds
+Stewardess’ lips kiss me
+That’s what I need, fly free
+Salt coats the air and my lungs
+Whenever I breathe
+Likely-
+Story that’s what I’m told
+Ain’t a thing can do about it
+That’s how life goes
+Get a job obey your boss
+And keep your mouth closed
+Cop a wrist watch and watch the time
+Tick, tick
+Tick, tick
+Tick tock
+You know it
+Might be the last time
+So I say goodbyes like I’m a poet
+Almost hooked on addy
+But you’ll never fucking know it
+I still got the pills in a place
+But instilled in my will is your face
+So I stay clean
+
+I promised it wouldn’t get so deep
+On this record, but irony sees
+He brought us together
+Now we searchin’ for seas,
+Cool breeze, and warm weather
+Breaking cycles, if they slice through,
+We bleed forever
+I’m always tangled in knots
+The one they almost forgot
+Can’t put me into a box
+I won’t conform to your thoughts
+I’ll switch it up on a dime
+Long line of folks I’m coming from
+I refuse to be defined by where they’re stuck
+Motherfucker
+
+Don’t say it’s not okay
+My heart can’t take it anymore
+Don’t say it’s not okay
+My heart can’t take it anymore
+
+Always cold in Michigan so I tell her-
+[LucyV]
+Bundle up baby bet this coat’ll fit you better
+Cause I’m under the weather
+I keeper her underwear wetter
+I pop off like a beretta
+Her nipples pop through her sweater
+I wonder if we’ll ever travel to the deep end
+How they keep it shallow
+Like I’m movin’ through the weekend
+Dabble in my devious ways
+I keep the breeze in my face
+And if you leave
+You’ll never see
+What kind of cheese Imma chase
+
+To keep it real I be a softy
+Chewy toffee
+The makers mark’ll always haunt me
+Like a ghost, do the most
+To forget about my thoughts
+But I’m lost on the coast
+Best believe she take it off
+To relieve all my woes
+Nose-
+Dive in complete superstition
+She ask me my sign in the
+Back of the kitchen
+Felt less than divine
+So I moved to submission
+Just waste all my time
+Then she said to me “listen-”
+
+Don’t say it’s not okay
+My heart can’t take it anymore
+(Don’t say, don’t say)
+Don’t say it’s not okay
+My heart can’t take it anymore
+(Don’t say, don’t say)
+
+[Headband Henny]
+Don’t say it’s not okay
+My heart can’t take it anymore
+(Don’t say, don’t say)
+Don’t say it’s not okay
+My heart can’t take it anymore`,
         song2: "Lyrics for Song 2...\nVerse 1...\nChorus...",
         song3: "Lyrics for Song 3...\nVerse 1...\nChorus...",
         song4: "Lyrics for Song 4...\nVerse 1...\nChorus...",
-        song5: "Lyrics for Song 5...\nVerse 1...\nChorus...",
+        song5: `Left my apartment all a mess
+I guess that's what I get
+For getting intimate with death
+Caress me down my neck
+Kiss me softly take my breath
+Heart beats harshly I forget
+The time that we have spent
+Twisted melodies and harmonies
+Old friends turn to enemies
+It was all a dream
+Sleepless nights and
+Endless fights
+You were my escape
+My come to light
+
+So tell me I'll be okay
+Sitting in the dark when it rains
+Working like a dog everyday
+Wanna quit my job everyday
+Wanna feel your body every night
+Transcends me to the sky
+Transcends me to the sky
+Transcends me to the sky
+
+And I can't be here by my lonesome
+I still cry sometimes
+
+[VERSE 2]
+
+So tell me I'll be okay
+Sitting in the dark when it rains
+Working like a dog everyday
+Wanna quit my job everyday
+Wanna feel your body every night
+Transcends me to the sky
+Transcends me to the sky
+Transcends me to the sky
+
+And I can't be here by my lonesome
+I still cry sometimes`,
         song6: "Lyrics for Song 6...\nVerse 1...\nChorus...",
         song7: `Young dumb broke
 But my heater go off
