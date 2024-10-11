@@ -1,6 +1,6 @@
 function displayLyrics(songKey) {
     const lyricsData = {
-        song1: `Featuring: LucyV, Headband Henny
+        bridgeburner: `Featuring: LucyV, Headband Henny
         
 I’m sailing on the ocean and the high seas
 Spray upon me, like a zombie
@@ -95,10 +95,204 @@ My heart can’t take it anymore
 (Don’t say, don’t say)
 Don’t say it’s not okay
 My heart can’t take it anymore`,
-        song2: "Lyrics for Song 2...\nVerse 1...\nChorus...",
-        song3: "Lyrics for Song 3...\nVerse 1...\nChorus...",
-        song4: "Lyrics for Song 4...\nVerse 1...\nChorus...",
-        song5: `Left my apartment all a mess
+        thirtyyears: `30 years young can I
+Get another talk with you
+Been praying to the lord for you
+Been praying to the lord for you
+But all I hear is silence
+Empty thoughts, broken promises
+So let's turn up the violence
+So let's turn up the-
+Look
+I don't need no one's help
+Never come with a gang
+I just rock by myself
+But when the van pull up
+Ain't nobody sleepin'
+Motherfucker stand up
+
+Dirty motherfuckers wanna hate on the process
+Mad cuz a fucker ain't got much options
+Been there, done that
+Cease all the nonesense
+Had to move from ticking ticking time bomb shit
+Opulence and pots of piss
+And politicians argue this
+The best it gets
+How I'm  supposed to
+How I'm supposed to
+How I'm  supposed to live a life
+With the end of a knife
+Point at my heart, throat, wallet despite
+The positive and overwhelming spirt
+I don't wanna hear it
+From a motherfucker with a silver spoon
+How I'm  supposed to
+Fight corruption private public
+How I manage like Chael Sonnen fighting home advantage
+Tell me something
+Why they all defend it
+Like they've always planned it
+Price tag your grave
+Like they own the planet
+Treat us a slave
+But he worked so hard
+Yeah his daddy's daddy
+But his daddy's daddy's daddy owned a farm
+Now he drives a beamer
+Hail the president
+Yelling fuck the beaners
+You can call me brown or you can call me white
+For you headline whatever's most convenient
+
+Heartbreaker been called that
+Scream out no one call back
+Apologize for the way we act
+Overcompensate for the things we lack
+
+Wasting all our time
+Caught in the middle of a lie you said
+Help yourself when you cry
+When you roll the dice
+When you roll the dice
+When you roll the dice yeah
+Wasting all our time
+Caught in the middle of a lie you said
+Help yourself when you cry
+When you roll the dice
+When you roll the dice
+When you roll the dice yeah
+
+Don't wanna play no games
+Hope my waveforms reach the gates for him
+Singin' falsetto
+Relax and revel in melodies
+Flippin' the recod no end in me
+Tip of the hat to that better me
+Are you kidding me?
+Hop out the window still knock on the door
+Are you kidding me?
+Reach for the handle think it was a Ford
+Little SUV thing
+Her mom bought it for her
+Living the dream
+One I can't afford
+Of course, directed off course, of course
+Pretty little thing got me fucked up
+Construct made of stone with a gold touch
+I'd be lying if I say I didn't sweat it
+Couple what ifs in this life
+Don't you get it?
+Don't you fret it
+Don't forget it
+In Belize send a message
+Oh please, he won't get it
+On your knees
+Quit your beggin'
+I'm runnin', I'm comin'
+I'm stuntin', I'm frontin'
+I'm fed up with bodies
+Pile ritual rings 'round me
+Who's stopping me from going mask on
+Like it's Miami
+Ya tengo memories
+Blood stained memories
+Why were you given this life
+Just to lose it all
+Why this, why that
+Why me
+
+Wasting all our time
+Caught in the middle of a lie you said
+Help yourself when you cry
+When you roll the dice
+When you roll the dice
+When you roll the dice yeah
+Wasting all our time
+Caught in the middle of a lie you said
+Help yourself when you cry
+When you roll the dice
+When you roll the dice
+When you roll the dice yeah`,
+        grjoyride: `Okay
+Crankin’ up the knobs
+In my ‘02 Saturn
+Wish I had a Porsche
+But I guess it doesn’t matter
+Should I get a good job
+Or should I be a rapper?
+I stay close to death
+So I think I’ll take the latter
+(Think I’ll take the latter)
+I stay close to death
+So I think I’ll take the latter
+Scooping up the bros
+Playing demos from my phone
+Home alone
+Writing poems
+Instead of making wallets fatter
+
+Fuck a 9 to 5
+I was rockin’ 12 to 12
+Cookin up a set list
+Setting heat down from the shelf
+Finally, I show my teeth
+Because I did it for myself
+I’m the self help guru
+Lift me out my cell (flash, flash, flash)
+Flash was my life in my eyes
+Boarded up in fear
+Shell shocked
+Drums popped
+I could see the end was near
+I could feel the blood
+I could hold a tear
+I could hear diablo
+Laughing at me
+Grinning ear to ear
+Yes another victim
+Yes another prospect
+Gonna bring the house down
+Better lean on this house bet
+Call me Charlie Olives
+Don’t part ways
+With your dollars yet
+Checking my surroundings
+The underdog has won again
+Step left
+Step right, step back
+Any other choice
+And visualize my bones crack
+Wake up the next day
+Business as usual
+I do not dwell
+On paychecks and cubicles
+I cannot surround myself
+With gente undevoted
+If you don’t have passion projects
+I won’t send my vote in
+50k you’re coping
+Living life feeling stoic
+You know it
+You know it, you know it
+
+Crankin’ up the knobs
+In my ‘02 Saturn
+Wish I had a Porsche
+But I guess it doesn’t matter
+Should I get a good job
+Or should I be a rapper?
+I stay close to death
+So I think I’ll take the latter
+(Think I’ll take the latter)
+I stay close to death
+So I think I’ll take the latter
+Scooping up the bros
+Playing demos from my phone
+Home alone
+Writing poems
+Instead of making wallets fatter`,
+        flor: `Left my apartment all a mess
 I guess that's what I get
 For getting intimate with death
 Caress me down my neck
@@ -138,8 +332,81 @@ Transcends me to the sky
 
 And I can't be here by my lonesome
 I still cry sometimes`,
-        song6: "Lyrics for Song 6...\nVerse 1...\nChorus...",
-        song7: `Young dumb broke
+        amb: `Made it to 21
+Yeah, I'm feeling blessed
+Prime of my time
+Yet, I'm still detached
+Nine more will it be the moment I meet the holy
+But his sister told me
+"Not your business, sit, relax"
+Listen you got a point
+Truth, what you're getting at
+Off script, from behind
+Sneak attack
+But that don't change the facts
+Peer inside to see the past
+Pessimistic, narcissistic
+With blood I write these raps
+
+I get asked
+Picked up the mic and put down your past
+I get asked
+Why even try when it's out your grasp
+I get asked
+Picked up the mic and put down your past
+
+Texting and I'm driving
+On my way home
+I don't pay no mind when
+I go-o-o
+
+Just say say something
+When you suffer
+When you're suffering
+
+Maybe I cop a new vice
+Just to cope with it
+Everyday I feel my brain fried
+So what's the difference
+My mental be a riptide
+Sometimes I swim in it
+Often times there's salt in my eyes
+Realize it's lingering
+Face down in front my speakers
+That's where you can find me
+Pen in my hand
+It's these sonic waves
+That I confide in
+Throw it all to the wind
+Hoping I can catch the lightning
+If you not on my side
+You know that we'll be fight-
+
+I'm to the point where I'm
+Questioning all my definitions
+How many of them will it take
+'Fore I take these premonitions
+Overclocking my mental state
+For the sake of grand ambitions
+Knowing only few can relate
+When I'm breaking down 'round Christmas
+I was never good enough
+Put it all behind me
+Stupid fucking rotten bastard child
+That defines me
+Never focus on the now
+Future always blinding
+Can you hear me when I shout
+I'm willing to die
+
+I get asked
+Picked up the mic and put down your past
+I get asked
+Why even try when it's out your grasp
+I get asked
+I get- I get
+I get asked`,
+        ofcourse: `Young dumb broke
 But my heater go off
 In a SRT driving round real slow
 When they see yo ass
@@ -259,7 +526,7 @@ I add it up
 I add it up
 I add it up
 I add it up`,
-        song8: `Tell them what you want
+        forgetu: `Tell them what you want
 But we know the real truth
 Blame me all you want
 But I won’t forgive you
@@ -360,7 +627,7 @@ I won’t forget you
 I won’t forget you
 I won’t forget you
 I won’t forget you`,
-        song9: `Priceless
+    income: `Priceless
 Indecisive
 Worship crisis
 Follow me everywhere
@@ -444,6 +711,84 @@ Since then it's a climb up the mountain
 But it'd help if I had some
 
 Income`,
+something: `Fucked up for life
+You can't see this twice
+Turn down the lights
+Gotta get you in my sight
+Only thing
+That make me forget
+So sweet
+My hands on your neck
+Gotta breathe
+Keep calm and collected
+Can't sleep
+I lay and reflect
+
+Breathe in
+Breathe in
+Breathe in
+You can't run no more
+Run no more
+
+Self made
+Bitch I'm self made
+Launching fucking missles
+We ain't throwing shade
+This shit be my bullets
+Imma let it spray
+Cocked it back
+Look down the sights
+My visions oh beautiful days
+Y'all never seen nothing like this
+Better bring it back to your clique
+Matter of fact I ain't even trip
+Seen the light
+See the crowd I'm in
+Seen the dark
+Never count me in
+I don't need a plan
+When I'm walking in
+My right hand
+I put my trust in it
+
+You keep hiding
+You can't fight it
+You keep lying
+You can't run no more
+Run no more
+You keep hiding
+You can't fight it
+You keep trying
+You can't run no more
+Run no more
+
+Always told trust in the process
+Gotta keep hope by my side
+No matter what hold mind over matter
+Head down no ego no pride
+Same mantra fooling the masses
+Work your job until you die
+Work your job until you die
+Work your job until you 
+
+Don't haunt me
+I can't sleep
+Don't haunt me
+I can't sleep
+Don't haunt me
+I can't sleep
+I can't sleep
+I can't sleep
+
+Don't haunt me
+I can't sleep
+Don't haunt me
+I can't sleep
+Don't haunt me
+I can't sleep anymore
+I can't sleep
+I can't- `,
+songTEMPLATE: "Lyrics for Song 4...\nVerse 1...\nChorus...",
     };
 
     document.getElementById('lyrics-text').textContent = lyricsData[songKey] || "Lyrics not found.";

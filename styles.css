@@ -161,7 +161,8 @@ body.secretrave::after {
 
 .nav-items li {
     margin-right: 10px;
-    padding: 1vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
 }
 
 .nav-items li:last-child {
@@ -169,7 +170,7 @@ body.secretrave::after {
 }
 
 .nav-items li a {
-    font-size: min(4.5vw, 100px);
+    font-size: min(4.5vw, 60px);
     color: #961515;
 }
 
@@ -179,6 +180,7 @@ body.secretrave::after {
 
 .logo {
     width: 10vw;
+    max-width: 120px;
 }
 
 .header1 {
@@ -422,12 +424,9 @@ body.secretrave::after {
 
 
 .youtube-income-container {
-    /* width: auto; */
-    /* height: auto; */
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
-    /* margin: 0 auto; */
+    width: auto;
+    height: auto;
+    margin: 10px;
     position: relative;
     padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100) */
     /* height: 0; */
@@ -440,6 +439,17 @@ body.secretrave::after {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.youtube-income {
+        display: flex;
+        flex-direction: column;
+}
+/* FIX THIS SHIT PLEASE I WANT IT TO GO TO A ROW, SIDE-BY-SIDE LOOK ON BIG SCREEN BUT I CANT GET IT TO WORK AAAAAAAAAAAAAAAAAAAAAA */
+@media (max-width: 768px) {
+    .youtube-income {
+        flex-direction: column;
+    }
 }
 
 /* CONTACT */
