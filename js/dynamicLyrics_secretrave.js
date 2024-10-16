@@ -404,6 +404,8 @@ Picked up the mic and put down your past
 I get asked
 Why even try when it's out your grasp
 I get asked
+Picked up the mic and put down your past
+I get asked
 I get- I get
 I get asked`,
         ofcourse: `Young dumb broke

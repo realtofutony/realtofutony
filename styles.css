@@ -855,6 +855,9 @@ footer {
 .dynamic-lyrics-container {
     text-align: center;
 }
+#lyrics-text {
+    margin-top: 0px;
+}
 
 .song-button-group {
     margin-bottom: 20px;
