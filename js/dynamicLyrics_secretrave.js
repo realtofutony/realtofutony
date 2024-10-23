@@ -354,6 +354,8 @@ I get asked
 Why even try when it's out your grasp
 I get asked
 Picked up the mic and put down your past
+I get asked
+Why can't you calm why can't you relax
 
 Texting and I'm driving
 On my way home
@@ -762,34 +764,7 @@ You keep hiding
 You can't fight it
 You keep trying
 You can't run no more
-Run no more
-
-Always told trust in the process
-Gotta keep hope by my side
-No matter what hold mind over matter
-Head down no ego no pride
-Same mantra fooling the masses
-Work your job until you die
-Work your job until you die
-Work your job until you 
-
-Don't haunt me
-I can't sleep
-Don't haunt me
-I can't sleep
-Don't haunt me
-I can't sleep
-I can't sleep
-I can't sleep
-
-Don't haunt me
-I can't sleep
-Don't haunt me
-I can't sleep
-Don't haunt me
-I can't sleep anymore
-I can't sleep
-I can't- `,
+Run no more`,
 songTEMPLATE: "Lyrics for Song 4...\nVerse 1...\nChorus...",
     };
 
