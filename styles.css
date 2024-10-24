@@ -865,6 +865,7 @@ footer {
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
+    background-color: #7dbb01;
 }
 
 .song-button {
