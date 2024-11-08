@@ -452,6 +452,28 @@ body.secretrave::after {
     }
 }
 
+.videoPlayer-secretrave {
+    aspect-ratio: 16 / 9;
+    width: 50%;
+}
+@media (max-width: 768px) {
+    .videoPlayer-secretrave {
+        width: 95%;
+    }
+}
+
+.secretRave-insta-container {
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .secretRave-insta-container {
+        flex-direction: column;
+    }
+}
+
+
+
 /* CONTACT */
 #contact-links {
     text-align: center;
