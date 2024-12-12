@@ -138,6 +138,21 @@ body.secretrave::after {
     z-index: -1; /
 }
 
+body.parkanoakland {
+    position: relative;
+}
+
+body.parkanoakland::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background-color: #47b9ff; /* Adjust the alpha value (last parameter) for opacity */
+    z-index: -1; /
+}
 
 
 .navbar {
@@ -268,6 +283,11 @@ body.secretrave::after {
     50% { color: #961515;}
     100% { color: #909090; }
 }
+@keyframes black-white {
+    0% { background-color: black; }
+    50% { background-color: gray;}
+    100% { background-color: black; }
+}
 
 /* INSTAGRAM FEED */
 #instagram-container {
@@ -279,6 +299,8 @@ body.secretrave::after {
 /* MUSIC LINKS */
 
 #links-music {
+    font-family:'BN Cringe Serif', serif;;
+    font-size: 7vw;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -290,6 +312,38 @@ body.secretrave::after {
     border-radius: 30px; /* Add border-radius for rounded corners */
     margin-top: 25px;
     margin-bottom: 25px;
+}
+
+#links-music a {
+    color: white;
+}
+
+.links-music {
+    font-family:'BN Cringe Serif', serif;;
+    font-size: 7vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: auto;
+    width: auto;
+    max-width: 85%;
+    /* backdrop-filter: blur(10px); */
+    border-radius: 30px; /* Add border-radius for rounded corners */
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: black;
+}
+
+.links-music a {
+    color: white;
+}
+@media (min-width: 768px) {
+    .links-music a {
+        font-size: 4vw;
+    }
+    #links-music a {
+        font-size: 4vw;
+    }
 }
 
 .image-wrapper-icons {
