@@ -288,6 +288,13 @@ body.parkanoakland::after {
     50% { background-color: gray;}
     100% { background-color: black; }
 }
+@keyframes music-fontColor-anim {
+    0% { color: #909090; }
+    45% { color: #856b6b; }
+    50% { color: #611515;}
+    52% { color: #c90000;}
+    100% { color: #909090; }
+}
 
 /* INSTAGRAM FEED */
 #instagram-container {
@@ -684,7 +691,7 @@ body.parkanoakland::after {
 
 .lyrics-block{
     text-align: center;
-    font-size: min(3vw, 32px);
+    font-size: clamp(10px, 5vw, 32px);
     color: #b3b3b3;
 }
 
