@@ -572,6 +572,7 @@ body.parkanoakland::after {
     background-color: #555;
 }
 /* end CONTACT end */
+
 /* GALLERY */
 
 .gallery {
@@ -593,6 +594,9 @@ body.parkanoakland::after {
     height: auto;
     object-fit: cover;
 }
+.gallery-item img:hover {
+    transform: scale(1.04);
+}
 
 @media (max-width: 768px) {
     .gallery-item {
@@ -608,6 +612,47 @@ body.parkanoakland::after {
         justify-content: center;
     }
 }
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: scale(1.02);
+}
+.modal.show {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+.modal img {
+    max-width: 90vw;
+    max-height: 90vh;
+    transition: transform 0.3s;
+}
+.modal .click-zone {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 25%;
+    cursor: pointer;
+}
+.modal .left-zone {
+    left: 0;
+}
+.modal .right-zone {
+    right: 0;
+}
+
 /* end GALLERY end */
 /* MUSIC AND LYRICS */
 .container {
