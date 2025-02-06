@@ -35,7 +35,7 @@
 
     <div class="project-main">
         <section class="title-section">
-            <img src="/assets/images/albumCovers/impulsiveSummer_cover_small.jpg" alt="Album Cover" class="album-cover">
+            <img src="/assets/images/albumCovers/impulsiveSummer_cover_small.jpg" data-zoom alt="Album Cover" class="album-cover">
             <h2 class="album-title">IMPULSIVE SUMMER</h2>
         </section>
         
@@ -122,7 +122,14 @@
         Run, run run run yeah <br>
         
     </section>
-    
+    <div class="modal" id="modal" onclick="closeModal()">
+        <div class="modal-content">
+            <div class="click-zone left-zone" onclick="changeImage(-1, event)"></div>
+            <img id="modalImg">
+            <div class="click-zone right-zone" onclick="changeImage(1, event)"></div>
+        </div>
+    </div>
+    <script src="/js/imageZoom.js"></script>
     <footer>
         <p>&copy; 2024 Tofu Tony. All Rights Reserved.</p>
     </footer>

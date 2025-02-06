@@ -129,6 +129,7 @@ I don't wanna hear it
 From a motherfucker with a silver spoon
 How I'm  supposed to
 Fight corruption private public
+Build republics
 How I manage like Chael Sonnen fighting home advantage
 Tell me something
 Why they all defend it
@@ -165,9 +166,9 @@ When you roll the dice yeah
 
 Don't wanna play no games
 Hope my waveforms reach the gates for him
-Singin' falsetto
+Singing falsetto
 Relax and revel in melodies
-Flippin' the recod no end in me
+Flipping the recod no end in me
 Tip of the hat to that better me
 Are you kidding me?
 Hop out the window still knock on the door
@@ -188,9 +189,9 @@ Don't forget it
 In Belize send a message
 Oh please, he won't get it
 On your knees
-Quit your beggin'
-I'm runnin', I'm comin'
-I'm stuntin', I'm frontin'
+Quit your begging
+I'm running, I'm coming
+I'm stunting, I'm fronting
 I'm fed up with bodies
 Pile ritual rings 'round me
 Who's stopping me from going mask on

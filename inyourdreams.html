@@ -35,7 +35,7 @@
 
     <div class="project-main">
         <section class="title-section">
-            <img src="/assets/images/albumCovers/iyd_cover_small.jpg" alt="Album Cover" class="album-cover">
+            <img src="/assets/images/albumCovers/iyd_cover_small.jpg" data-zoom alt="Album Cover" class="album-cover">
             <h2 class="album-title">In Your Dreams</h2>
         </section>
         <section class="tracklist-section">
@@ -127,7 +127,15 @@
         <div class="youtube-income-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/KgixJwv5aEY?si=p9QbnIDFNUJtOh17" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
     </section>
-
+    
+    <div class="modal" id="modal" onclick="closeModal()">
+        <div class="modal-content">
+            <div class="click-zone left-zone" onclick="changeImage(-1, event)"></div>
+            <img id="modalImg">
+            <div class="click-zone right-zone" onclick="changeImage(1, event)"></div>
+        </div>
+    </div>
+    <script src="/js/imageZoom.js"></script>
     
     <footer>
         <p>&copy; 2024 Tofu Tony. All Rights Reserved.</p>

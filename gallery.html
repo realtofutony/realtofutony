@@ -38,45 +38,54 @@
 
     <div class="gallery">
         <div class="gallery-item">
-            <img src="/assets/images/gallery/slumTony_oct2.jpg" alt="Tofu Tony performing with Slum for a Halloween show in Lansing, MI">
+            <img src="/assets/images/gallery/slumTony_oct2.jpg" data-zoom alt="Tofu Tony performing with Slum for a Halloween show in Lansing, MI" onclick="openModal(0)">
         </div>
         <div class="gallery-item">
-            <img src="/assets/images/gallery/jPlantanaTony.JPG" alt="J. Plantana guest performing with Tofu Tony">
+            <img src="/assets/images/gallery/jPlantanaTony.JPG" data-zoom alt="J. Plantana guest performing with Tofu Tony" onclick="openModal(1)">
         </div>
         <div class="gallery-item">
-            <img src="/assets/images/gallery/masonSovaTony.JPG" alt="Mason Sova guest performing with Tofu Tony">
+            <img src="/assets/images/gallery/masonSovaTony.JPG" data-zoom alt="Mason Sova guest performing with Tofu Tony" onclick="openModal(2)">
         </div>
         <div class="gallery-item">
-            <img src="/assets/images/gallery/slumTony_oct1.JPG" alt="Tofu Tony performing with Slum">
+            <img src="/assets/images/gallery/slumTony_oct1.JPG" data-zoom alt="Tofu Tony performing with Slum" onclick="openModal(3)">
         </div>
         <div class="gallery-item">
-            <img src="/assets/images/gallery/tony_kevinAbstract.jpg" alt="Tofu Tony with Kevin Abstract of BROCKHAMPTON">
+            <img src="/assets/images/gallery/tony_kevinAbstract.jpg" data-zoom alt="Tofu Tony with Kevin Abstract of BROCKHAMPTON" onclick="openModal(4)">
         </div>
         <div class="gallery-item">
-            <img src="/assets/images/gallery/tony_2ndAmend.jpg" alt="Tofu Tony with 2nd amendment hat">
+            <img src="/assets/images/gallery/tony_2ndAmend.jpg" data-zoom alt="Tofu Tony with 2nd amendment hat" onclick="openModal(5)">
         </div>
         <div class="gallery-item">
-            <img src="/assets/images/gallery/tofuCrew.jpg" alt="Tofu Tony and Slum and crew">
+            <img src="/assets/images/gallery/tofuCrew.jpg" data-zoom alt="Tofu Tony and Slum and crew" onclick="openModal(6)">
         </div>
         <div class="gallery-item">
-            <img src="/assets/images/gallery/tony_beach1.JPG" alt="Tofu Tony at a Lake Michigan beach with American flag hat">
+            <img src="/assets/images/gallery/tony_beach1.JPG" data-zoom alt="Tofu Tony at a Lake Michigan beach with American flag hat" onclick="openModal(7)">
         </div>
         <div class="gallery-item">
-            <img src="/assets/images/gallery/tofutony_OpenMic3_SideLook.png" alt="Tofu Tony Looking to the Side On Stage At Mac's Bar in Lansing, Michigan during an Open Mic Event">
+            <img src="/assets/images/gallery/tofutony_OpenMic3_SideLook.png" data-zoom alt="Tofu Tony Looking to the Side On Stage At Mac's Bar in Lansing, Michigan during an Open Mic Event" onclick="openModal(8)">
         </div>
         <div class="gallery-item">
-            <img src="/assets/images/gallery/tonyStupid.png" alt="Tofu Tony Portrait">
+            <img src="/assets/images/gallery/tonyStupid.png" data-zoom alt="Tofu Tony Portrait" onclick="openModal(9)">
         </div>
         <div class="gallery-item">
-            <img src="/assets/images/gallery/tonyAndSlum.JPG" alt="Tofu Tony and Producer Slum">
+            <img src="/assets/images/gallery/tonyAndSlum.JPG" data-zoom alt="Tofu Tony and Producer Slum" onclick="openModal(10)">
         </div>
         <div class="gallery-item">
-            <img src="/assets/images/gallery/TonyGasStation.JPEG" alt="Tofu Tony in Mask at Gas Station">
+            <img src="/assets/images/gallery/TonyGasStation.JPEG" data-zoom alt="Tofu Tony in Mask at Gas Station" onclick="openModal(11)">
         </div>
         <div class="gallery-item">
-            <img src="/assets/images/gallery/TonyIncomePhoto.JPG" alt="Tofu Tony in front of a Saturn SC2 Car">
+            <img src="/assets/images/gallery/TonyIncomePhoto.JPG" data-zoom alt="Tofu Tony in front of a Saturn SC2 Car" onclick="openModal(12)">
         </div>
-    </div>          
+    </div>      
+
+    <div class="modal" id="modal" onclick="closeModal()">
+        <div class="modal-content">
+            <div class="click-zone left-zone" onclick="changeImage(-1, event)"></div>
+            <img id="modalImg">
+            <div class="click-zone right-zone" onclick="changeImage(1, event)"></div>
+        </div>
+    </div>
+    <script src="/js/imageZoom.js"></script>        
 
     <footer>
         <p>&copy; 2024 Tofu Tony. All Rights Reserved.</p>
