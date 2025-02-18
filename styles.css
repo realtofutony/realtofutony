@@ -1038,3 +1038,29 @@ footer {
 }
 /* /////////////////////// */
 /* /////////////////////// */
+/* DOWNLOADS PAGE!!!!!!! */
+#download-list {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .download-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .download-button:hover {
+    background-color: #0056b3;
+  }
