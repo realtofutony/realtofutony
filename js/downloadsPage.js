@@ -1,6 +1,6 @@
 // List of files in the downloads folder
 const files = [
-    { name: "GRjoyride_musicVideo_FINAL.mp4", description: "GR joyride music video" },
+    { name: "Birthday in September_TEST.mp3", description: "bday in sept test" },
   ];
   
   // Get the container where download links will be added
