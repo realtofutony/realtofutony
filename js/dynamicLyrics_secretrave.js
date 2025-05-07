@@ -215,7 +215,10 @@ Help yourself when you cry
 When you roll the dice
 When you roll the dice
 When you roll the dice yeah`,
-        grjoyride: `Okay
+        grjoyride: `Produced by: Slum
+        
+Okay
+
 Crankin’ up the knobs
 In my ‘02 Saturn
 Wish I had a Porsche
@@ -766,6 +769,158 @@ You can't fight it
 You keep trying
 You can't run no more
 Run no more`,
+penumbra: `I remember running through the city lights
+Hoping for another flight
+Take me back to summertime
+I remember running through the city lights
+I remember waking up in sleepless nights
+Hoping for a paradise
+God, you've really done it this time
+I remember running through the city lights
+
+I remember running through the city lights
+Hoping for another flight
+Take me back to summertime
+I remember running through the city lights
+I remember waking up in sleepless nights
+Hoping for a paradise
+God, you've really done it this time
+I remember running through the city lights
+
+Do you think forever?
+Do you breathe the same
+When you're with me?
+Do you miss each other?
+Do you miss the place you used to be?
+See, I find you clever
+I find a shroud of mystery
+If it's not forever
+Then I don't want to die in peace
+
+Would you still love me all the same
+If I was I lost and out the way
+And if I change
+God, if I change
+And I'll do all the things you say
+I'll cut my hair a certain way
+For the chance that you still stay
+
+A warm front
+A soft touch
+The pressure
+Give it all at once
+I'm breathless
+At one look
+My only fear's
+Falling out of love
+
+I remember running through the city lights
+Hoping for another flight
+Take me back to summertime
+I remember running through the city lights
+I remember waking up in sleepless nights
+Hoping for a paradise
+God, you've really done it this time
+I remember running through the city lights`,
+
+netbangin:`Tofu Tony and Slum - Prod. by Tekeo
+
+[Slum]
+Work in the back
+Bad bitch on my lap
+
+About ten cholos deep
+And they all got heat
+Twelve bitches in the crib
+And they all suck D
+If I was a sin
+Then I would say greed
+
+Hoes blowin' up my phone
+Ask if I'm alone
+Shawty fuckin' with a G
+Fuck she thought it mean
+Grown man shit
+Lil boy take a seat
+
+I shut shit down
+When I
+I shut shit down
+
+[Tony]
+I got pictures on my phone
+Ask me what I'm up to
+Show you what I'm on
+That's confidential
+Tell you move along
+Back off my beat, bitch
+You fuckin' up my song
+That's like two four six
+Arizonas in the backseat
+All white whip
+Three doors one dime piece
+Hi-C, sun soaking
+Quick driving
+I'm your fix and that guy
+You can try me
+Walk in and they're staring
+I got secrets not for sharing
+My crew tighter than a snare drum
+Kill it, move on to the next one
+Always gotta flex some
+Get yo ass seated
+We gon' melt your body
+By the way it's getting heated
+
+Don't play no games
+We run amok
+In the shadows
+Up on stage
+With a blade tucked
+Catch a fade
+You fuckin' lames
+Come say some
+Imma spray some
+Run and gun
+I got lead
+With your name on it`,
+aphrodite: `Wanna treat her
+So good
+So good
+She said I treat her
+So good
+So good
+
+And I'll prove it everyday
+She know nobody is better for her
+And she think that I'm a god
+Because nobody respect her
+I'll do everything in my power
+Lift her higher and higher
+Got addicted her love a drug
+Could make me do this for hours
+
+And I hop into my car
+She got me driving for miles
+It's a four cylinder engine
+This tank last me a while
+My speedometer's at a hundred
+Think I'm losing my brakes
+Just the price of entry
+I'd do anything that it'd take
+
+Wanna treat her
+So good
+So good
+Wanna treat her
+So good
+So good
+She said I treat her
+So good
+So good
+She said I treat her
+So good
+So good`,
 songTEMPLATE: "Lyrics for Song 4...\nVerse 1...\nChorus...",
     };
 
