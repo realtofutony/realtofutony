@@ -828,13 +828,20 @@ netbangin:`Tofu Tony and Slum - Prod. by Tekeo
 [Slum]
 Work in the back
 Bad bitch on my lap
-
-About ten cholos deep
+Sticks tucked real low
+Get hoed with the straps
+Got 10 more stops
+Boy I gotta get a grip
+45 in the cut
+Catch a bullet in the ditch
+Bout ten cholos deep
 And they all got heat
 Twelve bitches in the crib
 And they all suck D
 If I was a sin
 Then I would say greed
+All about that money
+Boy I'm talkin bout that green
 
 Hoes blowin' up my phone
 Ask if I'm alone
@@ -842,10 +849,26 @@ Shawty fuckin' with a G
 Fuck she thought it mean
 Grown man shit
 Lil boy take a seat
+Bring her to the spot
+Then kick her to the streets
 
 I shut shit down
-When I
+When I come through town
 I shut shit down
+When I come around
+Shells gon' hit
+When I lay you down
+Hell's gon' split
+When I lay you down
+
+Pull up like a villain
+Creepin' through your window
+Swerve around the block
+Better hit the floor
+Boy I'm on a hunt
+It gon' get real cold
+Mud drippin' off the cup
+It gon' get real slow
 
 [Tony]
 I got pictures on my phone
