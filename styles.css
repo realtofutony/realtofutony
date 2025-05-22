@@ -598,7 +598,7 @@ body.stoopfest::after {
 }
 
 .gallery-item {
-    flex: 1 1 200px; /* Each item is at least 200px wide */
+    flex: 1 1 300px; /* Each item is at least 300px wide */
     max-width: calc(33.33% - 20px); /* Three items per row on larger screens */
     box-sizing: border-box;
 }
@@ -942,17 +942,16 @@ footer {
 
 /* SHOWS PAGE */
 .shows-section {
-    max-width: 1800px;
+    max-width: 1500px;
     margin: 0 auto;
     margin-bottom: 20x;
     padding: 20px;
     text-align: center;
     background-color: #0000009e;
     backdrop-filter: blur(10px);
-    font-size: 3.5vw;
+    font-size: clamp(1rem, 2vw, 1.5rem); /* scalable, but capped */
 }
 .shows-section.past {
-    max-width: 1500px;
     background-color: #160000dc;
     font-style: italic;
 }
@@ -961,14 +960,18 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 0;
+    gap: 10px;
+    text-align: center;
 }
 
 #shows-link {
     color: #961515;
-    border: 2px, solid, #9615159c;
-    padding: 4px;
+    border: 2px solid #9615159c;
+    padding: 4px 8px;
+    text-decoration: none;
 }
-
+/* /////END OF SHOWS//// */
 /* TESTIMONIALS */
 .testimonials {
     max-width: 900px;
