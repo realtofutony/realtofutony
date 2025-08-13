@@ -944,6 +944,137 @@ So good
 She said I treat her
 So good
 So good`,
+impsum: `I'm so lucky writing stories 
+On this fucking planet
+If I die tomorrow
+It's because I fucking planned it
+No one tells me nothing
+Because I don't understand it
+Give a fuck about a critic
+'Less his name is fantastic
+
+Phantasms in my room
+Red or yellow put it past me
+My favorite color blue
+Perfect plastic taste like raspberry
+And it stains my pearly teeth
+So stupid how it means to me
+
+Throw my whole life away
+For a little fun, yeah
+Are you gonna come, yeah
+Why'd he have to run, yeah
+Run, run run run yeah
+Throw my whole life away
+For a little fun, yeah
+Are you gonna come, yeah
+I'm, running out of funds, yeah
+Run, run run run yeah
+        
+And girl you got to think about it
+Change my name like you change outfits
+Know you got them options
+Waiting for you that's a promise
+But I can't be trusted honest actions
+Just ask my accountant
+Been in the red so long
+Finally running out of oxygen
+        
+Quick as I'd came
+Is as quick as I can go
+If you need someone to blame
+Then I'll play your scapegoat
+And I know you have morals
+Surrounded by your sorrows
+But what say you
+Will you be around tomorrow
+Quick as we came
+Is as quick as we can go
+Only have so much time
+On this earth
+Why take it slow
+And I know I'm hard to handle
+Mysteries and scandals
+But what say you
+can I set a good example for you
+        
+Throw my whole life away
+For a little fun, yeah
+Are you gonna come, yeah
+Why'd he have to run, yeah
+Run, run run run yeah
+Throw my whole life away
+For a little fun, yeah
+Are you gonna come, yeah
+I'm, running out of funds, yeah
+Run, run run run yeah`,
+headlock: `Tofu Tony and Slum - Prod. by hxrtt
+
+[Tony]
+Dreams so high
+Gotta stand on my toes
+I get knocked down
+Shit, that's how it goes
+Why ain't y'all tell me this
+Tell me before
+Ditching the rocks
+Before I could roll
+
+Almost been a year
+Since it started clicking for me
+I ain't never seen the light
+'Fore I cracked the door open
+I don't sit around hoping
+My vision, my future, my decisions
+I don't fear victim culture keep coping
+You and your mans
+Getting mopped up too
+I ain't sparing no life
+These are broad stroke moves
+If you ever feel stuck
+Then bitch just move
+Ever in my way
+Then bitch just move
+Think it's a flex
+Got a bitch, that's cool
+With a drink in your hand
+Yeah, your dad does too
+Does it ring a bell
+Maybe strike a chord too?
+We can fight about it
+I don't think you wanna lose
+
+[Slum]
+Kickback gonna give him
+Motion sickness
+Pay your cap back 
+I won't leave no witness
+Had them boys runnin'
+You can call it fitness
+You might end up missing
+If I catch you slippin'
+Thought you wanted smoke
+You a hoe
+Lay it down
+Now she wanting more
+Arsenal in my trench coat
+
+All my problems
+Solved with violence
+Making moves
+Slide in silence
+Do not truce
+Guns size of violins
+With my goons 
+In banks of finance
+Grip my tool
+Make him float
+Double barrel in my coat
+Shorty wanna gimme throat
+MC Brothers at your door`,
+songTemplate: `put text however u want
+hey
+hello`,
 songTEMPLATE: "Lyrics for Song 4...\nVerse 1...\nChorus...",
     };
 
