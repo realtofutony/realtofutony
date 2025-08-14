@@ -1047,7 +1047,7 @@ I don't think you wanna lose
 [Slum]
 Kickback gonna give him
 Motion sickness
-Pay your cap back 
+Peel your cap back 
 I won't leave no witness
 Had them boys runnin'
 You can call it fitness
@@ -1066,7 +1066,7 @@ Slide in silence
 Do not truce
 Guns size of violins
 With my goons 
-In banks of finance
+In banks with finance
 Grip my tool
 Make him float
 Double barrel in my coat
