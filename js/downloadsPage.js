@@ -3,6 +3,7 @@ const files = [
     { name: "Birthday in September_TEST.mp3", description: "bday in sept test" },
     { name: "promo_income_new1.mp4", description: "income vid 1" },
     { name: "promo_income_new2.mp4", description: "income vid 2" },
+    { name: "music_bdayConcert_chords.pdf", description: "bug fest Chords" },
   ];
   
   // Get the container where download links will be added
