@@ -4,6 +4,7 @@ const files = [
     { name: "promo_income_new1.mp4", description: "income vid 1" },
     { name: "promo_income_new2.mp4", description: "income vid 2" },
     { name: "music_bdayConcert_chords.pdf", description: "bug fest Chords" },
+    { name: "BugFest_program.zip", description: "bug fest program" },
   ];
   
   // Get the container where download links will be added
