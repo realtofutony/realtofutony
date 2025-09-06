@@ -39,11 +39,19 @@
     <section id="announcement" style="display: flex; align-items: center; justify-content: center; height: auto; min-height: 70vh; padding-top: 20px;">
         <div>
             <!-- <a href="/inyourdreams.html" style="font-size: min(5vw, 150px); display: flex; justify-content: center; color: #980c0c;">In Your Dreams: the mixtape</a> -->
-             <a href="/cadenceandchaos.html" style="color: #47b9ff; font-size: min(5vw, 150px); display: flex; justify-content: center;" target="_self" rel="noreferrer">LIVE AUG. 15TH!</a>
+             <a href="/shows.html" style="color: #47b9ff; font-size: min(5vw, 150px); display: flex; justify-content: center; opacity: 0; transform: translateX(-200%); animation: swipeIn 1s ease forwards;" target="_self" rel="noreferrer">Upcoming Shows!</a>
             <div style="display: flex; justify-content: center; font-style: italic; align-items: center; margin: 10px;">
-
-                <a href="/cadenceandchaos.html"><img src="/assets/images/mason/mason_cadenceandchaos_poster.jpg" alt="Have You Seen This Man? Face" style="height: 50vw; width: 50vw; max-width: 400px; max-height: 400px;"></img>
                 <!-- <a href="/inyourdreams.html#listen"><img src="/assets/images/gifs/inYourDreams_smaller240.gif" alt="Have You Seen This Man? Face" style="height: 50vw; width: 50vw; max-width: 400px; max-height: 400px;"></img> -->
+            </div>
+            <div class="posters-container">
+                <div class="posters">
+  <a href="/shows.html">
+    <img src="assets/images/posters/poster1.png" alt="Poster 1">
+  </a>
+  <a href="/shows.html">
+    <img src="assets/images/posters/poster2.jpg" alt="Poster 2">
+  </a>
+</div>
             </div>
             <div style="display: flex; justify-content: center; font-style: italic;">
                 <a href="/inyourdreams.html#listen" style="font-size: 4vw; color: #980c0c;" target="_self" rel="noreferrer">LISTEN</a>
@@ -189,5 +197,74 @@
         <p>&copy; 2024 Tofu Tony. All Rights Reserved. <br>YES, I CODED THIS WEBSITE BY MYSELF!!!:)<br><a href="/random.html" style="color: transparent;">secret</a></p>
     </footer>
 </body>
+
+<style>
+
+@keyframes swipeIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);       /* end at normal position */
+    }
+}
+/* Container for posters */
+.posters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* space between posters */
+  padding: 20px;
+  background: transparent; /* remove if you want a bg */
+}
+
+.posters a {
+  flex: 0 1 45%;
+  display: block;
+  transition: transform .3s ease;
+  max-width: 400px;
+}
+.posters a:hover,
+.posters a:active { transform: scale(1.03); }
+
+/* images fill their link boxes; animate each image separately */
+.posters img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  opacity: 0;
+  animation: fadeIn 3s ease forwards, float1 9s ease-in-out infinite;
+  will-change: transform;
+  width: 100%;        /* fill the anchor box */
+  height: auto;
+}
+
+/* second poster gets a different float path + duration (desynced) */
+.posters a:nth-child(2) img {
+  animation: fadeIn 1s ease forwards, float2 11s ease-in-out infinite;
+}
+
+/* opacity-only fade avoids transform conflicts */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* subtle, continuous drift: x/y + slight rotation, no “flat” frame */
+@keyframes float1 {
+  0%   { transform: translate(0, 0) rotate(-0.3deg); }
+  25%  { transform: translate(5px, -8px) rotate(0.3deg); }
+  50%  { transform: translate(-4px, -15px) rotate(-0.2deg); }
+  75%  { transform: translate(-6px, -6px) rotate(0.4deg); }
+  100% { transform: translate(0, 0) rotate(-0.3deg); }
+}
+@keyframes float2 {
+  0%   { transform: translate(0, 0) rotate(0.2deg); }
+  25%  { transform: translate(-5px, -12px) rotate(-0.3deg); }
+  50%  { transform: translate(6px, -18px) rotate(0.3deg); }
+  75%  { transform: translate(3px, -10px) rotate(-0.2deg); }
+  100% { transform: translate(0, 0) rotate(0.2deg); }
+}
+
+</style>
 
 </html>
